@@ -1,12 +1,12 @@
 import axios from "./axios.js";
 export const ApiRegistrar = async (Valor) => {
-  return await axios.post("https://deploy-backend-mern-mongodb-production.up.railway.app/api/tareas/api/register", Valor);
+  return await axios.post("https://deploy-backend-mern-mongodb-production.up.railway.app//api/register", Valor);
 };
 
 export const ApiLogin = async (valor) => {
-  return await axios.post("https://deploy-backend-mern-mongodb-production.up.railway.app/api/tareas/api/login", valor);
+  return await axios.post("https://deploy-backend-mern-mongodb-production.up.railway.app//api/login", valor);
 };
 
 export const VerificarToken = async () => {
-  return await axios.get('https://deploy-backend-mern-mongodb-production.up.railway.app/api/tareas/api/verify')
+  return await axios.get('https://deploy-backend-mern-mongodb-production.up.railway.app//api/verify')
 }
