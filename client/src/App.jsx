@@ -6,7 +6,7 @@ import Tarea from "./pages/tarea";
 import BuscarTarea from "./pages/BuscarTarea";
 import AgregarTarea from "./pages/AgregarTarea";
 import Usuario from "./pages/usuario";
-import Login from "./pages/login";
+import Login from "./pages/Login";
 import HomePage from "./pages/HomePage";
 import ProteccionPaginas from "./components/ProteccionPaginas";
 import Navbar from "./components/Navbar";
