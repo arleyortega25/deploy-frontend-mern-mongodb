@@ -1,6 +1,7 @@
 import TaskCard from "../components/TaskCard";
 import { UseTask } from "../context/TaskContext";
 import { useEffect } from "react";
+import { UseAuth } from "../context/AuthContext";
 
 function Tarea() {
   const { VerTareas, tarea } = UseTask();
