@@ -4,15 +4,20 @@ import { useEffect } from "react";
 
 function Tarea() {
   const { VerTareas, tarea } = UseTask();
+  const { isAuthenticated } = UseAuth();
   useEffect(() => {
-    VerTareas();
-  }, []);
+    if (isAuthenticated) {
+      VerTareas();
+    }
+  }, [isAuthenticated]);
 
   return (
-    <div>
-      {tarea.map((t) => {
-        return <TaskCard task={t} key={t._id} />;
-      })}
+     <div>
+      {tarea.length > 0 ? (
+        tarea.map((t) => <TaskCard task={t} key={t._id} />)
+      ) : (
+        <p>No hay tareas</p>
+      )}
     </div>
   );
 }
