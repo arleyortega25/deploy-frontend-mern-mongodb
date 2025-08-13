@@ -27,6 +27,7 @@ export function AuthContext(props) {
   const FuncionLogin = async (valor) => {
     try {
       const res = await ApiLogin(valor);
+      SetUser(res.data);
 
       setIsAuthenticated(true);
     } catch (error) {
