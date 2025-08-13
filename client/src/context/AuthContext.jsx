@@ -37,8 +37,7 @@ export function AuthContext(props) {
   };
   useEffect(() => {
     const VerificarLogin = async () => {
-      const cookie = Cookies.get();
-      if (cookie.token) {
+      
         try {
           const res = await VerificarToken();
           if (res.data) {
@@ -54,7 +53,7 @@ export function AuthContext(props) {
           setIsAuthenticated(false);
           SetUser(null);
         }
-      }
+      
       setCargando(false);
     };
     VerificarLogin();
