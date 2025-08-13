@@ -10,3 +10,7 @@ export const ApiLogin = async (valor) => {
 export const VerificarToken = async () => {
   return await axios.get('https://deploy-backend-mern-mongodb-production.up.railway.app/api/verify')
 }
+
+export const ApiLogout = async ()=>{
+  return await axios.post('https://deploy-backend-mern-mongodb-production.up.railway.app/api/verify/logout')
+}
